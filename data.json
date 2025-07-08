@@ -1,0 +1,138 @@
+[
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "signup",
+    "testName": "Name Too Short",
+    "name": "A",
+    "lastName": "User",
+    "email": "neg{{rand}}@mail.com",
+    "password": "Abc1234!",
+    "repeatPassword": "Abc1234!",
+    "expStatus": 400
+  },
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "signup",
+    "testName": "Name Too Long",
+    "name": "VeryLongNameHereOver20Chars",
+    "lastName": "User",
+    "email": "neg{{rand}}@mail.com",
+    "password": "Abc1234!",
+    "repeatPassword": "Abc1234!",
+    "expStatus": 400
+  },
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "signup",
+    "testName": "Missing Password",
+    "name": "Test",
+    "lastName": "User",
+    "email": "neg{{rand}}@mail.com",
+    "password": "",
+    "repeatPassword": "",
+    "expStatus": 400
+  },
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "signup",
+    "testName": "Password Too Short",
+    "name": "Test",
+    "lastName": "User",
+    "email": "neg{{rand}}@mail.com",
+    "password": "Abc1",
+    "repeatPassword": "Abc1",
+    "expStatus": 400
+  },
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "signup",
+    "testName": "Passwords Mismatch",
+    "name": "Test",
+    "lastName": "User",
+    "email": "neg{{rand}}@mail.com",
+    "password": "Abc1234!",
+    "repeatPassword": "Xyz1234",
+    "expStatus": 400
+  },
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "signup",
+    "testName": "Invalid Email",
+    "name": "Test",
+    "lastName": "User",
+    "email": "not-an-email",
+    "password": "Abc1234!",
+    "repeatPassword": "Abc1234!",
+    "expStatus": 400
+  },
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "profile",
+    "testName": "Invalid Name Type",
+    "name": 123,
+    "lastName": "User",
+    "dateBirth": "1990-01-01",
+    "country": "Ukraine",
+    "expStatus": 400
+  },
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "profile",
+    "testName": "Missing Name",
+    "name": "",
+    "lastName": "User",
+    "dateBirth": "1990-01-01",
+    "country": "Ukraine",
+    "expStatus": 400
+  },
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "profile",
+    "testName": "Name Too Short",
+    "name": "A",
+    "lastName": "User",
+    "dateBirth": "1990-01-01",
+    "country": "Ukraine",
+    "expStatus": 400
+  },
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "profile",
+    "testName": "Name Too Long",
+    "name": "VeryVeryVeryLongNameOver20",
+    "lastName": "User",
+    "dateBirth": "1990-01-01",
+    "country": "Ukraine",
+    "expStatus": 400
+  },
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "profile",
+    "testName": "Invalid LastName Type",
+    "name": "Test",
+    "lastName": true,
+    "dateBirth": "1990-01-01",
+    "country": "Ukraine",
+    "expStatus": 400
+  },
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "profile",
+    "testName": "Invalid Date Format",
+    "name": "Test",
+    "lastName": "User",
+    "dateBirth": "01-01-1990",
+    "country": "Ukraine",
+    "expStatus": 400
+  },
+  {
+    "url": "https://qauto2.forstudy.space/api",
+    "scope": "profile",
+    "testName": "Invalid Country Type",
+    "name": "Test",
+    "lastName": "User",
+    "dateBirth": "1990-01-01",
+    "country": 123,
+    "expStatus": 400
+  }
+]
